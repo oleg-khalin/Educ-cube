@@ -1,0 +1,59 @@
+body {
+	background: url('http://subtlepatterns.com/patterns/light_noise_diagonal.png');
+	font: 7em 'PT Sans', Tahoma, Arial;
+}
+
+#wrapper {
+	perspective: 900px;
+	margin: 80px;
+}
+
+#cube {
+	height: 300px;
+	position: relative;
+	width: 300px;
+
+	transform-origin: 50% 50% -150px;
+	transform-style: preserve-3d;
+}
+
+.side {
+	background: rgba(0,0,0,.3);
+	height: 300px;
+	width: 300px;
+
+	background: radial-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+
+	border-radius: 10px;
+	border: 10px solid #fff;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	color: #fff;
+	font-size: 5 em;
+	line-height: 300px;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4);
+
+	transform-origin: 50% 50% -150px;
+	/*-moz-backface-visibility: hidden;*/
+}
+
+#side2 {
+	transform: rotateY(90deg);
+}
+
+#side3 {
+	transform: rotateY(-90deg);
+}
+
+#side4 {
+	transform: rotateX(90deg);
+}
+
+#side5 {
+	transform: rotateX(-90deg);
+}
+
+#side6 {
+	transform: rotateY(180deg);
+}
